@@ -1,0 +1,473 @@
+.mainComponentHomePage {
+    padding: 0px;
+    margin: 0px;
+}
+
+.leftSideComponentHomePage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17%;
+    height: 100%;
+    background-color: royalblue;
+    color: white;
+}
+
+.rightSideComponentHomePage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 83%;
+}
+
+.rightSideTopComponentHomePage {
+    position: relative;
+    text-align: right;
+    top: 0;
+    height: 250px;
+    background-image: url('./images/vecteezy_illustration-of-a-beautiful-girl-with-glasses-and-long-wavy_20528156.jpg');
+    background-size: 100% 170%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.textHeaderOne {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+    padding-right: 20px;
+    font-style: bold;
+}
+
+.textHeaderTwo {
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-right: 20px;
+}
+
+.textHeaderTwo .bi-sun-fill {
+    color: orange;
+}
+
+.textHeaderTwo .bi-moon-fill {
+    color: gray;
+}
+
+/* NavBar CSS For Desktop Site */
+.navbarContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+}
+
+.navbarContainer ul {
+    list-style: none;
+
+}
+
+.navbarContainer ul li {
+    font-size: 22px;
+    padding-bottom: 45px;
+}
+
+.linkstyle {
+    text-decoration: none;
+    color: white;
+}
+
+.linkstyle:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    font-size: 30px;
+}
+
+.navbarContainer ul li:hover {
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.navbarContainer ul li .bi {
+    padding-right: 10px;
+}
+
+.songCard {
+    padding: 15px;
+}
+
+.songCard:hover {
+    padding-top: 30px;
+    transition: 0.3s;
+}
+
+.songCardName {
+    color: gray;
+    text-align: center;
+    padding-top: 5px;
+    font-family: serif;
+}
+
+.songCardViewRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-right: 15px;
+}
+
+.songByListContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.songCardViewRow::-webkit-scrollbar {
+    display: none;
+}
+
+
+.songCard img {
+    width: 150px;
+    border-radius: 25px;
+}
+
+.songCard p {
+    font-style: normal;
+    font-family: sans-serif;
+    color: black;
+}
+
+.headingSongsContainer {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(182, 182, 182);
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.headingBlock {
+    width: 100%;
+    display: inline-block;
+}
+
+.headingSongsContainer {
+    padding: 10px 10px;
+    width: 15%;
+    padding-left: 33px;
+}
+
+.headingSongsContainerchanges {
+    width: 100%;
+    color: red;
+}
+
+.hrHeading {
+    width: 85%;
+    padding-top: 3px;
+}
+
+.shivam {
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 2px;
+}
+
+
+.searchInputWrapper {
+    position: relative;
+    margin-top: 40px;
+}
+
+.searchInput {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid royalblue;
+    width: 40rem;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    color: #a1a1a1;
+    transition: transform 0.1s ease-in-out;
+}
+
+::placeholder {
+    color: royalblue;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+    text-indent: -999px
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInputIcon {
+    position: absolute;
+    left: 70%;
+    top: 18px;
+    font-size: 25px;
+    color: royalblue;
+    transition: all 0.1s ease-in-out;
+}
+
+.search-container {
+    margin-top: 150px;
+}
+
+.bottomSongsContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 30%;
+    background-color: rgba(65, 105, 225);
+    height: 90px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.image-and-text-div-player {
+    position: relative;
+    top: -60px;
+    left: 30px;
+}
+
+.playing-music-image {
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border: 7px solid royalblue;
+    border-radius: 20px;
+}
+
+.player-music {
+    position: absolute;
+    bottom: 3px;
+    right: 50px;
+    width: 40%;
+}
+
+
+.player {
+    position: relative;
+    /* max-width: 480px; */
+    margin: 0 auto;
+}
+
+.player .icon-pause {
+    display: none;
+}
+
+.player.playing .icon-pause {
+    display: inline-block;
+}
+
+.player.playing .icon-play {
+    display: none;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+}
+
+.control .btn {
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+}
+
+.control .btn:active {
+    color: royalblue;
+}
+
+.btn.active {
+    color: royalblue;
+}
+
+.control .btn:hover {
+    cursor: pointer;
+    border: 0px;
+}
+
+.control .btn:focus-visible {
+    cursor: pointer;
+    border: 0px;
+}
+
+.control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 192, 203, 0.842);
+}
+
+.text-container-music-player {
+    position: relative;
+    left: 14%;
+    top: -62px;
+    color: white;
+}
+
+.bottom-padding-to-div {
+    padding-bottom: 160px;
+}
+
+.create-new-playlist {
+    color: royalblue;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.create-new-playlist-input {
+    border: 0px;
+    color: gray;
+    border-bottom: 1px solid royalblue;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+
+.playlist {
+    color: royalblue;
+}
+
+.create-new-playlist-input::placeholder {
+    color: gray;
+}
+
+.create-new-playlist-input:focus {
+    outline: none;
+}
+
+/* 
+.progress {
+	width: 100%;
+	height: 6px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+
+.progress::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 12px;
+	height: 6px;
+	background-color: royalblue;
+	cursor: pointer;
+} */
+
+.favSongsCoard {
+    float: left;
+    margin-bottom: 45px;
+}
+
+.favSongsCoard:hover {
+    padding-top: 15px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+.song-card-name {
+    text-align: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.songCardViewUpdatedWidth {
+    width: 180px;
+}
+
+.LoginSignInModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sign-in-form-details-all-input-wrapper {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.sign-in-form-details-input::placeholder {
+    color: gray;
+}
+
+.sign-in-form-details-input {
+    border: 0px;
+    color: gray;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding: 15px;
+    margin: 12px;
+}
+
+.sign-in-form-details-input:focus {
+    outline: none;
+}
+
+.modal-header-imp .btn-close {
+    display: none;
+}
+
+.modal-footer-login-signin {
+    width: 100%;
+}
+.modal-footer-login-signin-button {
+    width: 48%;
+}
